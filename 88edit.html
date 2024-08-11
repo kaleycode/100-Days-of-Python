@@ -1,0 +1,25 @@
+<!--edit.html-->
+<html>
+  <head>
+    <title>Stinky Blog</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="vertical-center">
+    <h1>Stinky Blog</h1>
+    <form method="post" action="/add">
+      <p>Title: <input type="text" name="title"></p>
+      <p>Date: <input type="date" name="date"></p>
+      <p>Write an Entry:<br> <textarea class = "text"name ="body"required></textarea></p>
+        
+        
+       <!-- <input type="text" name="body"></p>-->
+      <button type="submit">Save</button>
+      <hr>
+    {content}
+
+      </div>
+    </div>
+  </body>
+</html>
