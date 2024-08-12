@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Chat Page</title>
+    <style>
+body {
+  background-color: #e2d3ed;
+  color: #303030;
+  font-family: 'Segoe UI';
+}
+h1{
+  color: #140c34;
+  text-align: center;
+}
+p, button{
+  text-align: center;
+  color: #0d091d;
+}
+h2, h4{
+  color: #1b003b;
+  text-align: center;
+      }
+p{
+  text-align: center;
+}
+.container { 
+  height: 0px;
+  position: relative;
+  border: none;
+  text-align: center;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="vertical-center">
+    <h1>🗣️ Community Chat Page 🗣️ </h1>
+    <h2>⭐️ What's up {username} ⭐️?</h2>
+    <hr>
+    {chats}
+    <hr>
+    <form method = "post" action = "/add">
+    <p>
+      Message: <input type = "text" name = "message" required></p>
+    <button type= "submit">Send</button>
+    </form>
+      </div>
+    </div>
+  </body>
+</html>
