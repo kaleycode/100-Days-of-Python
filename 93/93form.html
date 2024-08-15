@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Tracks by Year</title>
+<style>
+body {
+    background-color: #f1eefc;
+    color: #303030;
+    font-family: 'Segoe UI';
+  }
+h1{
+   color: #140c34;
+   text-align: center;
+}
+p, button{
+  text-align: center;
+  color: #0d091d;
+  }
+h2{
+    color: #1b003b;
+    text-align: center;
+  }
+.container { 
+    height: 0px;
+    position: relative;
+    border: none;
+    text-align: center;
+  }
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+</style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="vertical-center">
+    <h1>Tracks by Year</h1>
+    <form method="post" action="/">
+      <p>Year: <input type="number" min="1900" max="2024" name="year" value="{value}"}> <button type="submit">Go</button></p>
+    </form>
+    {songs}
+        </div>
+          </div>
+  </body>
+</html>
