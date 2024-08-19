@@ -1,5 +1,3 @@
-#using beatiful soup to get the headings within a wikipedia page...
-
 import requests
 from bs4 import BeautifulSoup
 
@@ -16,4 +14,4 @@ article = soup.find_all("div", {"class": "mw-heading mw-heading3"})
 
 for i in article:
   text += i.text
-  print(i.text)
+  print(i.text.replace("[edit]", ""))
