@@ -2,6 +2,7 @@ import os, json
 from flask import Flask, request
 import requests
 
+# this program is simple: you press the button, you get a new joke :)
 
 app = Flask(__name__)
 
