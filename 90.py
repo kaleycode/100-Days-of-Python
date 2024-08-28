@@ -1,15 +1,13 @@
 #day 90 of 100 days of code:
 import requests, json, time
 
-for i in range(10):
+for i in range(15):
   result = requests.get("https://randomuser.me/api/")
   if result.status_code == 200:
     user = result.json()
     for person in user["results"]:
-      filename = f"""{person["name"]["first"].lower()}_{person["name"]["last"].lower()}.jpg"""
-      picture = requests.get(person["picture"]["medium"])
+      filename = f"""{person["name"]["first"].lower()} {person["name"]["last"].lower()}\nemail: {person["email"].lower()}\n\n"""
       f = open(filename, "wb")
-      f.write(picture.content)
       f.close()
       print(f"{filename}")
-      time.sleep(0.3)
+      time.sleep(0.2)
