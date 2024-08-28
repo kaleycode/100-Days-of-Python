@@ -1,3 +1,4 @@
+#just doing basic writng/calling functions
 import os, time
 
 balance = 1500
