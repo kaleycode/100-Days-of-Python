@@ -1,3 +1,4 @@
+#here I am getting the heading titles from web scraping :)
 import requests
 from bs4 import BeautifulSoup
 
