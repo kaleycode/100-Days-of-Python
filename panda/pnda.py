@@ -21,7 +21,7 @@ column_data = table.find_all("tr")[1:]                  #   getting rid of the e
 
 for row in column_data:
     row_data = row.find_all("td")
-    individual_row_data = [data.text.strip() for data in row_data]          #   getting our rows
+    each_row_data = [data.text.strip() for data in row_data]          #   getting our rows
     length = len(df)
-    df.loc[length] = individual_row_data        #  now we have all the data from the first table from the website :) 
+    df.loc[length] = each_row_data        #  now we have all the data from the first table from the website :) 
 print(df)
