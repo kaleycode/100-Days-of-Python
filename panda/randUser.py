@@ -7,7 +7,6 @@ pd.set_option("display.max_rows", None)
 r= requests.get("https://randomuser.me/api/?results=5")
 result = json.loads(r.content)
 
-
 firstname = []
 firstname.append(result['results'][0]["name"]["first"])
 firstname.append(result['results'][1]["name"]["first"])
@@ -21,7 +20,6 @@ lastName.append(result['results'][1]["name"]["last"])
 lastName.append(result['results'][2]["name"]["last"])
 lastName.append(result['results'][3]["name"]["last"])
 lastName.append(result['results'][4]["name"]["last"])
-
 
 gender = []
 gender.append(result["results"][0]["gender"])
